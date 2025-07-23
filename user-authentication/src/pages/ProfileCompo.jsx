@@ -1,8 +1,12 @@
 import axios from "axios";
 import React, { use, useState,} from "react";
+import { Navigate, useNavigate } from "react-router";
+
 
 const ProfileCompo = () => {
   const [userdata, setUserData] = useState("");
+  const navigate = useNavigate();
+  
   
 
   const getProfile = () => {
@@ -27,6 +31,7 @@ const ProfileCompo = () => {
     setUserData();
     localStorage.removeItem("token");
     alert("logout are complted please login");
+    navigate("/login")
     
   };
   return (
