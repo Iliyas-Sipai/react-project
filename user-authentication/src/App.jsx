@@ -10,7 +10,6 @@ import NavbarCompo from './NavbarCompo'
 function App() {
   return (
     <>
-       {/* <Router> */}
        <NavbarCompo /> 
       <Routes>
         <Route path='/' element={<LoginCompo/>}/>
