@@ -16,9 +16,6 @@ function App() {
         <Route path='/login' element={<LoginCompo/>}/>
         <Route path='/profile' element={<ProfileCompo/>}/>
       </Routes>
-      {/* </Router> */}
-    {/* <LoginCompo/>
-    <ProfileCompo/> */}
     </>
   )
 }
