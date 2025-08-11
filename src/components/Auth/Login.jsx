@@ -1,19 +1,31 @@
-import React from 'react'
+import React from "react";
 
 const Login = () => {
   return (
     <>
-       <div className='flex h-screen w-screen items-center justify-center'>
-         <div className='border-2 border-red-600'>
-            <form action="#" className='flex flex-col item-center justify-center'>
-                 <input className='text-black border-2 border-emeral-600 rounded-full py-4 pxl-5' type="email" placeholder='Enter your email'/>
-                 <input type="password" placeholder='Enter your passwrod' />
-                 <button>Log in</button>
-            </form>
-         </div>
-        </div>    
+      <div className="flex h-screen w-screen items-center justify-center">
+        <div className="border-2 border-emerald-600 rounded-xl p-20">
+          <form action="#" className="flex flex-col item-center justify-center">
+            <input
+              className=" text-white border-2 outline-none bg-transparent border-emerald-600 rounded-full py-3 px-5 placeholder:text-gray-400"
+              type="email"
+              placeholder="Enter your email"
+              required
+            />
+            <input
+              className="text-white border-2 mt-5 outline-none bg-transparent border-emerald-600 rounded-full py-3 px-5 placeholder:text-gray-400"
+              type="password"
+              placeholder="Enter your passwrod"
+              required
+            />
+            <button className=" mt-5 text-white border-none outline-none bg-emerald-600 rounded-full py-5 px-5 placeholder:text-white">
+              Log in
+            </button>
+          </form>
+        </div>
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default Login
+export default Login;
