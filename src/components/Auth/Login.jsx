@@ -1,11 +1,15 @@
 import React from "react";
 
 const Login = () => {
+      const saveData = () =>{
+        console.log("saveDtaa");
+        
+      }
   return (
     <>
       <div className="flex h-screen w-screen items-center justify-center">
         <div className="border-2 border-emerald-600 rounded-xl p-20">
-          <form action="#" className="flex flex-col item-center justify-center">
+          <form action="#" className="flex flex-col item-center justify-center" onSubmit={saveData}>
             <input
               className=" text-white border-2 outline-none bg-transparent border-emerald-600 rounded-full py-3 px-5 placeholder:text-gray-400"
               type="email"
