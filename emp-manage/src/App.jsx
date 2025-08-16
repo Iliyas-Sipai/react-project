@@ -4,10 +4,12 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import React from 'react'
 import Login from './components/Auth/Login'
+import EmployeDashbord from './components/Dashbord/EmployeDashbord'
 function App() {
   return (
     <>
-    <Login/>
+    {/* <Login/> */}
+    <EmployeDashbord/>
     </>
   )
 }

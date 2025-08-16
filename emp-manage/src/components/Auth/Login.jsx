@@ -9,6 +9,8 @@ const Login = () => {
         console.log("saveDtaa",email);
         console.log("password",password);
         
+        setEmail("")
+        setPassword("")
       }
   return (
     <>
