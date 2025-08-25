@@ -14,6 +14,7 @@ const Navigation = () => {
                   <li>Location</li>
                   <li>About</li>
                   <li>Contact</li>
+                  <li>Gallry</li>
                 </ul>
                 <button>Login</button>
           </nav>
