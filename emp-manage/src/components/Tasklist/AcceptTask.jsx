@@ -3,7 +3,8 @@ import React from 'react'
 const AcceptTask = () => {
   return (
     <div>
-      hello world
+      <h1>This is over task liskst</h1>
+      <h1>This is over task liskst</h1>
     </div>
   )
 }
