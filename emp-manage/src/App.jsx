@@ -5,11 +5,13 @@ import './App.css'
 import React from 'react'
 import Login from './components/Auth/Login'
 import EmployeDashbord from './components/Dashbord/EmployeDashbord'
+import AdminDashbord from './components/Dashbord/AdminDashbord'
 function App() {
   return (
     <>
     {/* <Login/> */}
-    <EmployeDashbord/>
+    {/* <EmployeDashbord/> */}
+    <AdminDashbord/>
     </>
   )
 }
