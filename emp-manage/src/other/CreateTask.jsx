@@ -43,7 +43,7 @@ const CreateTask = () => {
               name=""
               id=""
               cols="30"
-              rows="10"
+              rows="10"  
             ></textarea>
           <button className="text-bold bg-emerald-500 py-3 hover:bg-emerald-600 px-5 rounded text-sm mt-4 w-full">Create Task</button>
           </div>
