@@ -6,12 +6,13 @@ import React from 'react'
 import Login from './components/Auth/Login'
 import EmployeDashbord from './components/Dashbord/EmployeDashbord'
 import AdminDashbord from './components/Dashbord/AdminDashbord'
+import Header from './other/Header'
 function App() {
   return (
     <>
-    <Login/>
+    {/* <Login/> */}
     <EmployeDashbord/>
-    {/* <AdminDashbord/> */}
+    {/* <AdminDashbord/>   */}
     </>
   )
 }
