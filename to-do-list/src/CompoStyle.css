@@ -10,7 +10,7 @@ body {
   padding: 25px;
   background: #f4f4f4;
   border-radius: 12px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1 15px rgba(0, 0, 0, 0.1);
   font-family: sans-serif;
 }
 
