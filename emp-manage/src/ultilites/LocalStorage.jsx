@@ -40,3 +40,9 @@ const admin = [
     role: "admin",
   },
 ];
+
+const user = {
+  username:"iliyas",
+  password:123
+}
+
