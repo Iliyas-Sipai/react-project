@@ -45,3 +45,9 @@ const user = {
   username:"iliyas",
   password:123
 }
+
+const pass = {
+  number:89,
+  setnumber:811,
+  tonum:89
+}
