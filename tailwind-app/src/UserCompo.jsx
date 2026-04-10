@@ -3,6 +3,7 @@ import React from 'react'
 const UserCompo = () => {
   const data = []
   return (
+    <>
     <div>
       <h1>This for user</h1>
       <div>
@@ -15,6 +16,12 @@ const UserCompo = () => {
            </div>
       </div>
     </div>
+
+    <div className="container">
+         <h1>Hello</h1>
+           <img src="https://www.freepik.com/premium-photo/squirrel-sitting-tree-branch_133348547.htm#from_element=category_discover&from_view=category" alt="" />
+    </div>
+    </>
     
   )
 }
