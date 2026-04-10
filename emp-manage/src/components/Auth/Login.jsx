@@ -1,14 +1,18 @@
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
 
-const Login = () => {
+const Login = ({handleLogin}) => {
+  // console.log(handleLogin);
    const [email,setEmail] = useState('');
    const [password,setPassword] = useState('')
       const saveData = (e) =>{
         e.preventDefault()
+        handleLogin(email,password)
+
+
+
         console.log("saveDtaa",email);
         console.log("password",password);
-        
         setEmail("")
         setPassword("")
       }
