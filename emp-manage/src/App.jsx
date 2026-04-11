@@ -12,20 +12,29 @@ import { getLocalStorage, setLocalStorage } from './ultilites/LocalStorage'
 function App() {
   const [user ,setUser]= useState(null)
   const handleLogin = (email,password) =>{
-    if(email == 'admin@gmail.com' && password == '123'){
-      console.log("this admin");
+
+    if(email === 'admin@gmail.com' && password == '123'){
+      setUser('admin')
+      console.log(user);
+
     } else if(email == 'user@gmail.com' && password == '123'){
-      console.log("this user");
+      setUser('employee')
+      console.log(user);
     }
     else{
       alert("invialid pass")
     }
-     console.log(email,password);
+    //  console.log(email,password);
   }
-  handleLogin('admin@gmail.com',123)
+  // handleLogin('admin@gmail.com',123)
   return (
     <>
-    {!user?<Login  handleLogin={handleLogin}/>:''}
+    {/* {!user?<Login  handleLogin={handleLogin}/>:''} */}
+    {!user && <Login handleLogin={handleLogin} />}
+    {!user && <Login handleLogin={handleLogin} />}
+{user === "admin" && <AdminDashbord />}
+{user === "employee" && <EmployeDashbord />}
+
     {/* <EmployeDashbord/> */}
     {/* <AdminDashbord/>   */}
     </>

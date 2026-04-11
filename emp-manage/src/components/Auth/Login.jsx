@@ -8,11 +8,8 @@ const Login = ({handleLogin}) => {
       const saveData = (e) =>{
         e.preventDefault()
         handleLogin(email,password)
-
-
-
-        console.log("saveDtaa",email);
-        console.log("password",password);
+        // console.log("saveDtaa",email);
+        // console.log("password",password);
         setEmail("")
         setPassword("")
       }

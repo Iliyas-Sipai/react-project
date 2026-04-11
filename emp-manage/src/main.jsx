@@ -8,10 +8,7 @@ import TaskContext from "./context/TaskContext.jsx";
 localStorage.clear()
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    {/* // <AuthCOntext> */}
-      {/* // <TaskContext> */}
         <App />
-      {/* // </TaskContext> */}
-    {/* // </AuthCOntext> */}
+        
   </StrictMode>
 );
