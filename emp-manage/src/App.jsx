@@ -13,7 +13,7 @@ import { AuthContext } from "./context/AuthProviderCompo";
 function App() {
   const [user, setUser] = useState(null);
   const data = useContext(AuthContext);
-  console.log(data.employees);
+  // console.log(data.admin);
 
   const handleLogin = (email, password) => {
     if (email === "admin@gmail.com" && password == "123") {
@@ -31,7 +31,7 @@ function App() {
     <>
       {/* {!user?<Login  handleLogin={handleLogin}/>:''} */}
       {!user && <Login handleLogin={handleLogin} />}
-      {!user && <Login handleLogin={handleLogin} />}
+      {/* {!user && <Login handleLogin={handleLogin} />} */}
       {user === "admin" ? <AdminDashbord /> : <EmployeDashbord />}
       {/* {user === "employee" && <EmployeDashbord />} */}
       {/* <EmployeDashbord/> */}
