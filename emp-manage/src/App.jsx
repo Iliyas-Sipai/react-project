@@ -13,15 +13,24 @@ import { AuthContext } from "./context/AuthProviderCompo";
 function App() {
   const [user, setUser] = useState(null);
   const data = useContext(AuthContext);
-  // console.log(data.admin);
+  console.log(data);
+
+  useEffect(()=>{
+    if(data){
+      const loggedInUser = localStorage.getItem("user are login")
+       if(loggedInUser){
+        setUser(loggedInUser)
+       }
+    }
+  },[data])
 
   const handleLogin = (email, password) => {
     if (email === "admin@gmail.com" && password == "123") {
       setUser("admin");
-      console.log(user);
+      localStorage.setItem('loggedInUser',JSON.stringify({role:'admin'}))
+      // console.log(user);
     } else if (email == "user@gmail.com" && password == "123") {
-      setUser("employee");
-      console.log(user);
+      localStorage.setItem('loggedInUser',JSON.stringify({role:'employee'}))
     } else {
       alert("invialid pass");
     }
@@ -29,11 +38,11 @@ function App() {
 
   return (
     <>
-      {/* {!user?<Login  handleLogin={handleLogin}/>:''} */}
-      {!user && <Login handleLogin={handleLogin} />}
+      {!user?<Login  handleLogin={handleLogin}/>:''}
+      {/* {!user && <Login handleLogin={handleLogin} />} */}
       {/* {!user && <Login handleLogin={handleLogin} />} */}
       {user === "admin" ? <AdminDashbord /> : <EmployeDashbord />}
-      {/* {user === "employee" && <EmployeDashbord />} */}
+      {user === "employee" && <EmployeDashbord />}
       {/* <EmployeDashbord/> */}
       {/* <AdminDashbord/>   */}
     </>

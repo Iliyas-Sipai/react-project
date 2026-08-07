@@ -11,7 +11,6 @@ const AdminDashbord = () => {
         <CreateTask/>
         <AllTask/>
       </div>
-     
 
     </>
   );
