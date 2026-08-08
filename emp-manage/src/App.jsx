@@ -15,11 +15,11 @@ function App() {
   const data = useContext(AuthContext);
   console.log(data);
 
-  useEffect(()=>{
+  useEffect(()=>{                        
     if(data){
       const loggedInUser = localStorage.getItem("user are login")
        if(loggedInUser){
-        setUser(loggedInUser)
+        setUser(loggedInUser.role)
        }
     }
   },[data])
